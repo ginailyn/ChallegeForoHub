@@ -171,11 +171,11 @@ http://localhost:8080/swagger-ui/index.html
 ![Captura de pantalla de la Base de Datos](src/main/resources/img-readme/diagramaER-BD.png)
 
 ## 📝 API Documentación 📝
-![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad5.png)
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad8.png)
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad9.png)
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad7.png)
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad3}.png)
+![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad5.png)
 
 ## 🔐 Autenticación y Autorización
 La API usa Spring Security para la autenticación y autorización. Los usuarios deben autenticarse para acceder a los endpoints.
