@@ -8,7 +8,7 @@
 
 # 🎓 ForoHub API
 
-API REST construida con **Spring Boot 3**, diseñada como un foro de discusión. Los usuarios pueden autenticarse. crear, leer, actualizar y eliminar tópicos (CRUD), respuestas a esos tópicos de acuerdo a los diferentes cursos y mantener la seguridad mediante **JWT (JSON Web Tokens)**.
+API REST construida con **Spring Boot 3**, diseñada con la temática de un foro de discusión. Un lugar donde las personas puedan crear sus tópicos con sus dudas o con sugerencias que otras personas puedan también responder e interactuar dentro de una comunidad.  Por tanto, los usuarios pueden autenticarse, crear, leer, actualizar y eliminar tópicos, cursos y respuestas asociadas a esos tópicos (CRUD),  de acuerdo a los diferentes cursos. La seguridad se ha establecido con Spring Security, manejando **JWT (JSON Web Tokens)**.
 
 ---
 
@@ -90,7 +90,10 @@ POST auth/login → Recibe usuario y contraseña, devuelve un token JWT.
 El token se debe enviar en el Auth del resto de los endpoints:
 ```
 Authorization: Bearer <tu_token>
+
 ```
+
+
 ## 👤 Usuarios
 
 - POST  auth/register → Registrar nuevo usuario.
