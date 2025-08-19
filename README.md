@@ -43,7 +43,7 @@ API REST construida con **Spring Boot 3**, diseñada como un foro de discusión.
 
 Clonar el repositorio:
 
-git clone https://github.com/tu-usuario/api-cursos.git
+git clone [https://github.com/tu-usuario/api-cursos.git](https://github.com/ginailyn/ChallegeForoHub.git)
 
 
 
