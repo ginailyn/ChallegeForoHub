@@ -146,15 +146,15 @@ Authorization: Bearer <tu_token>
  
 - GET /respuestas/topico/{id} →  Mostrar las respuestas de un tópico.
     
+---
 
-🧪 Pruebas con Insomnia / Postman
+## 🧪 Pruebas con Insomnia / Postman
 
 - Registrar usuario → POST auth/register
 
 - Iniciar sesión → POST auth/login
 
 -- → Guardar el token JWT de la respuesta.
-
 
 ## Hacer peticiones a endpoints protegidos enviando en Auth:
 ```
@@ -163,6 +163,12 @@ Authorization: Bearer <token>
 Acceder a la API en:
 http://localhost:8080/swagger-ui/index.html
 
+---
+## 🔐 Autenticación y Autorización
+
+La API usa **Spring Security 3**, para la autenticación y autorización. Los usuarios deben autenticarse para acceder a los endpoints.
+
+---
 
 ## 🌟 Base de Datos  Tablas  🌟
 
@@ -176,11 +182,6 @@ http://localhost:8080/swagger-ui/index.html
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad7.png)
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad3}.png)
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad5.png)
-
----
-## 🔐 Autenticación y Autorización
-
-La API usa **Spring Security 3**, para la autenticación y autorización. Los usuarios deben autenticarse para acceder a los endpoints.
 
 ---
 
