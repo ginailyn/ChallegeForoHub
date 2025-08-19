@@ -20,7 +20,7 @@ API REST construida con **Spring Boot 3**, diseñada como un foro de discusión.
   - **Curso** 📘  
   - **Tópico** 💬  
   - **Respuesta** 📝
-  - 
+
 - Seguridad implementada con **Spring Security** + **Filter JWT**.
 - Persistencia con **Spring Data JPA** y **MySQL** (configurable).
 - Migraciones de base de datos con **Flyway**.
