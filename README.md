@@ -77,16 +77,11 @@ http://localhost:8080/swagger-ui/index.html
 
 
 
-## 🌟 Menu 🌟
-
-
-## 🌟 Opciones 🌟
-
 ## 🌟 Base de Datos, Tablas y Manejo Información almacenada en DB ya consumida de la API-Gutendex 🌟
 
 ## 📝 Tablas DB 📝
 
-
+![Captura de pantalla de la Base de Datos](src/main/resources/img-readme/diagramaER-BD.png)
 
 ## 📝 Información Almacenada 📝
 
