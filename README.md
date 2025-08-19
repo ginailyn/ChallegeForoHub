@@ -91,7 +91,7 @@ El token se debe enviar en el Auth del resto de los endpoints:
 ```
 Authorization: Bearer <tu_token>
 ```
-👤 Usuarios
+## 👤 Usuarios
 
 - POST  auth/register → Registrar nuevo usuario.
 
@@ -107,7 +107,7 @@ Authorization: Bearer <tu_token>
 
 - DELETE /usuarios/{username} → Deshabilitar o Eliminar usuarios lógicamente por userName.
 
-📚 Cursos
+## 📚 Cursos
 
 - POST /cursos → Registrar un curso
 
@@ -122,7 +122,7 @@ Authorization: Bearer <tu_token>
 - DELETE /cursos/{id} → Deshabilitar o Eliminar cursos lógicamente.
 
 
-💬 Tópicos
+## 💬 Tópicos
 
 - GET /topicos → Listar todos los tópicos.
 
@@ -136,7 +136,7 @@ Authorization: Bearer <tu_token>
 
 - DELETE /topicos/{id} → Eliminar un tópico.
 
-📝 Respuestas
+## 📝 Respuestas
 
 - POST /respuestas → Crear respuesta en un tópico.
 
@@ -156,7 +156,7 @@ Authorization: Bearer <tu_token>
 -- → Guardar el token JWT de la respuesta.
 
 
-# Hacer peticiones a endpoints protegidos enviando en Auth:
+## Hacer peticiones a endpoints protegidos enviando en Auth:
 ```
 Authorization: Bearer <token>
 ```
