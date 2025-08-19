@@ -49,6 +49,7 @@ git clone https://github.com/tu-usuario/api-cursos.git
 
 Configurar la base de datos en application.properties:
 
+```java environment
 spring.datasource.url=jdbc:mysql://localhost/foro_hub
 spring.datasource.username=root
 spring.datasource.password=tu_password
