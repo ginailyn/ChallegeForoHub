@@ -92,34 +92,34 @@ Authorization: Bearer <tu_token>
 ```
 👤 Usuarios
 
-POST /usuarios → Registrar nuevo usuario.
+- POST /usuarios → Registrar nuevo usuario.
 
-GET /usuarios/{id} → Obtener usuario por id.
+- GET /usuarios/{id} → Obtener usuario por id.
 
 💬 Tópicos
 
-GET /topicos → Listar todos los tópicos.
+- GET /topicos → Listar todos los tópicos.
 
-POST /topicos → Crear un nuevo tópico (requiere autenticación).
+- POST /topicos → Crear un nuevo tópico (requiere autenticación).
 
-GET /topicos/{id} → Ver detalle de un tópico.
+- GET /topicos/{id} → Ver detalle de un tópico.
 
-DELETE /topicos/{id} → Eliminar un tópico.
+- DELETE /topicos/{id} → Eliminar un tópico.
 
 📝 Respuestas
 
-POST /respuestas → Crear respuesta en un tópico.
+- POST /respuestas → Crear respuesta en un tópico.
 
-GET /respuestas/{id} → Ver respuesta.
+- GET /respuestas/{id} → Ver respuesta.
 
 🧪 Pruebas con Insomnia / Postman
 
-Registrar usuario → POST /usuarios
+- Registrar usuario → POST /usuarios
 
 Iniciar sesión → POST /login
 → Guardar el token JWT de la respuesta.
 
-Hacer peticiones a endpoints protegidos enviando en headers:
+## Hacer peticiones a endpoints protegidos enviando en headers:
 ```
 Authorization: Bearer <token>
 ```
