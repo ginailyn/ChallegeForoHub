@@ -79,14 +79,14 @@ Por defecto se ejecuta en http://localhost:8080.
 ## 📌 Endpoints principales
 ## 🔐 Autenticación
 
-POST /login → Recibe usuario y contraseña, devuelve un token JWT.
+POST auth/login → Recibe usuario y contraseña, devuelve un token JWT.
 ```
 {
   "token": "eyJhbGciOiJIUzI1NiIsInR..."
 }
 
 ```
-El token se debe enviar en el header:
+El token se debe enviar en el header del resto de los endpoints:
 ```
 Authorization: Bearer <tu_token>
 ```
@@ -114,10 +114,10 @@ Authorization: Bearer <tu_token>
 
 🧪 Pruebas con Insomnia / Postman
 
-- Registrar usuario → POST /usuarios
+- Registrar usuario → POST auth/register
 
-Iniciar sesión → POST /login
-→ Guardar el token JWT de la respuesta.
+- Iniciar sesión → POST auth/login
+-- → Guardar el token JWT de la respuesta.
 
 ## Hacer peticiones a endpoints protegidos enviando en headers:
 ```
