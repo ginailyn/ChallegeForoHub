@@ -173,7 +173,7 @@ http://localhost:8080/swagger-ui/index.html
 ## 📝 API Documentación 📝
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad5.png)
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad8.png)
-![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad.png)
+![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad9.png)
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad7.png)
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad3}.png)
 
