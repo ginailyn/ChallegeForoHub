@@ -55,6 +55,8 @@ spring.datasource.username=root
 spring.datasource.password=tu_password
 spring.jpa.hibernate.ddl-auto=update
 
+---
+
 ## 🗄️ Estructura del proyecto
 
 src/main/java/com/alura/desafios/apiForoHub/
