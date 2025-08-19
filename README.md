@@ -60,12 +60,13 @@ spring.jpa.hibernate.ddl-auto=update
 
 ## 🗄️ Estructura del proyecto
 
+```
 src/main/java/com/alura/desafios/apiForoHub/
 │── domain/          # Entidades (Usuario, Curso, Topico, Respuesta)
 │── infra/security/  # Seguridad y JWT (TokenService, SecurityFilter, etc.)
 │── controller/      # Controladores REST
 │── repository/      # Repositorios JPA
-
+```
 ## Compilar y ejecutar la aplicación:
 
 mvn spring-boot:run
