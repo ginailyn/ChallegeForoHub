@@ -55,23 +55,15 @@ spring.datasource.username=root
 spring.datasource.password=tu_password
 spring.jpa.hibernate.ddl-auto=update
 
-Configurar la base de datos:
+## 🗄️ Estructura del proyecto
 
-Desarrollo y pruebas: La aplicación está configurada para usar H2 Database por defecto.
-Producción: Actualiza las configuraciones en src/main/resources/application.properties con las credenciales de tu base de datos MySQL.
-spring.datasource.url=jdbc:mysql://localhost:3306/forohub
-spring.datasource.username=tu-usuario
-spring.datasource.password=tu-contraseña
-spring.jpa.hibernate.ddl-auto=update
-
-
-🗄️ Estructura del proyecto
 src/main/java/com/alura/desafios/apiForoHub/
 │── domain/          # Entidades (Usuario, Curso, Topico, Respuesta)
 │── infra/security/  # Seguridad y JWT (TokenService, SecurityFilter, etc.)
 │── controller/      # Controladores REST
 │── repository/      # Repositorios JPA
-Compilar y ejecutar la aplicación:
+
+## Compilar y ejecutar la aplicación:
 
 mvn spring-boot:run
 
