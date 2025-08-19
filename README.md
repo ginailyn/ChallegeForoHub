@@ -49,6 +49,9 @@ git clone [https://github.com/ginailyn/ChallegeForoHub.git](https://github.com/g
 
 Configurar la base de datos en application.properties:
 
+Desarrollo y pruebas: La aplicación está configurada para usar H2 Database por defecto.
+Producción: Actualiza las configuraciones en src/main/resources/application.properties con las credenciales de tu base de datos MySQL.
+
 ```java environment
 spring.datasource.url=jdbc:mysql://localhost/foro_hub
 spring.datasource.username=root
@@ -71,19 +74,71 @@ src/main/java/com/alura/desafios/apiForoHub/
 
 mvn spring-boot:run
 
+Por defecto se ejecuta en http://localhost:8080.
 
+## 📌 Endpoints principales
+## 🔐 Autenticación
+
+POST /login → Recibe usuario y contraseña, devuelve un token JWT.
+```
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR..."
+}
+
+```
+El token se debe enviar en el header:
+```
+Authorization: Bearer <tu_token>
+```
+👤 Usuarios
+
+POST /usuarios → Registrar nuevo usuario.
+
+GET /usuarios/{id} → Obtener usuario por id.
+
+💬 Tópicos
+
+GET /topicos → Listar todos los tópicos.
+
+POST /topicos → Crear un nuevo tópico (requiere autenticación).
+
+GET /topicos/{id} → Ver detalle de un tópico.
+
+DELETE /topicos/{id} → Eliminar un tópico.
+
+📝 Respuestas
+
+POST /respuestas → Crear respuesta en un tópico.
+
+GET /respuestas/{id} → Ver respuesta.
+
+🧪 Pruebas con Insomnia / Postman
+
+Registrar usuario → POST /usuarios
+
+Iniciar sesión → POST /login
+→ Guardar el token JWT de la respuesta.
+
+Hacer peticiones a endpoints protegidos enviando en headers:
+```
+Authorization: Bearer <token>
+```
 Acceder a la API en:
 http://localhost:8080/swagger-ui/index.html
 
 
 
-## 🌟 Base de Datos, Tablas y Manejo Información almacenada en DB ya consumida de la API-Gutendex 🌟
+## 🌟 Base de Datos  Tablas  🌟
 
 ## 📝 Tablas DB 📝
 
 ![Captura de pantalla de la Base de Datos](src/main/resources/img-readme/diagramaER-BD.png)
 
 ## 📝 Información Almacenada 📝
+
+## 🔐 Autenticación y Autorización
+La API usa Spring Security para la autenticación y autorización. Los usuarios deben autenticarse para acceder a los endpoints.
+---
 
 ## Autor: ✒️
 
