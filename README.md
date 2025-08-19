@@ -178,7 +178,9 @@ http://localhost:8080/swagger-ui/index.html
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad5.png)
 
 ## 🔐 Autenticación y Autorización
-La API usa Spring Security para la autenticación y autorización. Los usuarios deben autenticarse para acceder a los endpoints.
+
+La API usa **Spring Security 3**, para la autenticación y autorización. Los usuarios deben autenticarse para acceder a los endpoints.
+
 ---
 
 ## Autor: ✒️
