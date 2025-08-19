@@ -6,7 +6,7 @@
 </div>
 <br> </br>
 
-#🎓 ForoHub ForoHub API
+##🎓 ForoHub ForoHub API
 💡 Sobre el proyecto
 
 API REST construida con **Spring Boot 3**, diseñada como un foro de discusión. Los usuarios pueden autenticarse. crear, leer, actualizar y eliminar tópicos (CRUD), respuestas a esos tópicos de acuerdo a los diferentes cursos y mantener la seguridad mediante **JWT (JSON Web Tokens)**.
