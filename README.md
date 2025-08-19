@@ -92,9 +92,34 @@ Authorization: Bearer <tu_token>
 ```
 👤 Usuarios
 
-- POST /usuarios → Registrar nuevo usuario.
+- POST  auth/register → Registrar nuevo usuario.
 
-- GET /usuarios/{id} → Obtener usuario por id.
+- GET /usuarios/id/{id} → Obtener usuario por id.
+  
+- GET /usuarios → Mostrar usuarios activos.
+
+- GET /usuarios/username/{username}  → Mostrar usuarios por userName.
+
+- GET /usuarios/all → Mostrar todos los usuarios (activos o no).
+
+- PUT /usuarios/{username} → Actualizar usuarios por userName.
+
+- DELETE /usuarios/{username} → Deshabilitar o Eliminar usuarios lógicamente por userName.
+
+📚 Cursos
+
+- POST /cursos → Registrar un curso
+
+- GET /cursos/{id} → Detalle de un curso
+  
+- GET /cursos → Mostrar cursos activos.
+
+- GET /usuarios/all → Mostrar todos los cursos (activos o no).
+
+- PUT /cursos/{id} → Actualizar los cursos.
+
+- DELETE /cursos/{id} → Deshabilitar o Eliminar cursos lógicamente.
+
 
 💬 Tópicos
 
@@ -104,6 +129,10 @@ Authorization: Bearer <tu_token>
 
 - GET /topicos/{id} → Ver detalle de un tópico.
 
+- GET /topicos/{id}/solucion  → Obtener la respuesta marcada como solución de un tópico
+
+- PUT /topicos/{id} →  Actualizar un tópico
+
 - DELETE /topicos/{id} → Eliminar un tópico.
 
 📝 Respuestas
@@ -112,20 +141,26 @@ Authorization: Bearer <tu_token>
 
 - GET /respuestas/{id} → Ver respuesta.
 
+- GET /respuestas/usuario/{id} →  Mostrar las respuestas de un usuario.
+ 
+- GET /respuestas/topico/{id} →  Mostrar las respuestas de un tópico.
+    
+
 🧪 Pruebas con Insomnia / Postman
 
 - Registrar usuario → POST auth/register
 
 - Iniciar sesión → POST auth/login
+
 -- → Guardar el token JWT de la respuesta.
 
-## Hacer peticiones a endpoints protegidos enviando en headers:
+
+# Hacer peticiones a endpoints protegidos enviando en Auth:
 ```
 Authorization: Bearer <token>
 ```
 Acceder a la API en:
 http://localhost:8080/swagger-ui/index.html
-
 
 
 ## 🌟 Base de Datos  Tablas  🌟
@@ -134,7 +169,13 @@ http://localhost:8080/swagger-ui/index.html
 
 ![Captura de pantalla de la Base de Datos](src/main/resources/img-readme/diagramaER-BD.png)
 
-## 📝 Información Almacenada 📝
+## 📝 API Documentación 📝
+![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad3}.png)
+![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad5.png)
+![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad2.png)
+![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad.png)
+![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad7.png)
+
 
 ## 🔐 Autenticación y Autorización
 La API usa Spring Security para la autenticación y autorización. Los usuarios deben autenticarse para acceder a los endpoints.
