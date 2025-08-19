@@ -86,7 +86,7 @@ POST auth/login → Recibe usuario y contraseña, devuelve un token JWT.
 }
 
 ```
-El token se debe enviar en el header del resto de los endpoints:
+El token se debe enviar en el Auth del resto de los endpoints:
 ```
 Authorization: Bearer <tu_token>
 ```
