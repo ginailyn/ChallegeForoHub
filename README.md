@@ -1,6 +1,6 @@
 <div align="center">
   <h1 align="center">
-    <img width="900" height="500" alt="LiteraluraBanner" src="https://github.com/user-attachments/assets/854814cc-47bb-4ae1-83e1-73880b63ff89" />
+    <img width="900" height="500" alt="Banner" src="src/main/resources/img-readme/FOROHub Portada.png" />
 
   </h1>
 </div>
