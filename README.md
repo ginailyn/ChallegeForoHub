@@ -72,8 +72,9 @@ src/main/java/com/alura/desafios/apiForoHub/
 ```
 ## Compilar y ejecutar la aplicación:
 
+```
 mvn spring-boot:run
-
+```
 Por defecto se ejecuta en http://localhost:8080.
 
 ## 📌 Endpoints principales
@@ -171,11 +172,10 @@ http://localhost:8080/swagger-ui/index.html
 
 ## 📝 API Documentación 📝
 ![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad3}.png)
-![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad3}.png)
-![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad5.png)
-![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad2.png)
-![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad.png)
-![Captura de pantalla de la API] (src/main/resources/img-readme/swaggerUtilidad7.png)
+![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad5.png)
+![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad2.png)
+![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad.png)
+![Captura de pantalla de la API](src/main/resources/img-readme/swaggerUtilidad7.png)
 
 
 ## 🔐 Autenticación y Autorización
